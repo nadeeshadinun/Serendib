@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-display-hero: "Playfair Display", Georgia, serif;
+  --font-headline: "Playfair Display", Georgia, serif;
+
+  --color-primary: #012d1d;
+  --color-primary-container: #1b4332;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #86af99;
+  --color-inverse-primary: #a5d0b9;
+  
+  --color-secondary: #805533;
+  --color-secondary-container: #fdc39a;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #794e2e;
+  
+  --color-tertiary: #3b1f00;
+  --color-tertiary-container: #56340e;
+  --color-tertiary-fixed: #ffdcbd;
+  --color-on-tertiary-fixed: #2c1600;
+  
+  --color-surface: #f9f9fb;
+  --color-surface-dim: #d9dadc;
+  --color-surface-bright: #f9f9fb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f3f6;
+  --color-surface-container: #edeef0;
+  --color-surface-container-high: #e8e8ea;
+  --color-surface-container-highest: #e2e2e5;
+  
+  --color-on-surface: #1a1c1e;
+  --color-on-surface-variant: #414844;
+  --color-surface-tint: #3f6653;
+  --color-inverse-surface: #2f3133;
+  --color-inverse-on-surface: #f0f0f3;
+  
+  --color-outline: #717973;
+  --color-outline-variant: #c1c8c2;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+  
+  body {
+    background-color: #f9f9fb;
+    color: #1a1c1e;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, .font-serif, .font-display-hero, .font-headline-lg, .font-headline-md, .font-headline-sm {
+    font-family: var(--font-serif);
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f3f3f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c8c2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #717973;
+}
+

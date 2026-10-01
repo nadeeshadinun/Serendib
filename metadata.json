@@ -1,0 +1,7 @@
+{
+  "name": "Serendib Online - Ceylon Estate Spices & Agro Exports",
+  "description": "Sovereign-grade single-origin Ceylon Black Pepper and Sri Lankan agro-exports. Lab-certified purity, ISO 22000 sterilization, and direct container shipping.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
